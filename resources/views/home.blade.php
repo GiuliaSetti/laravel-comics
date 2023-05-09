@@ -3,9 +3,16 @@
 
 @section('content')
 
+<!-- jumbotron -->
+    <div id="jumbotron">
+
+
+    </div>
+<!-- /jumbotron -->
+
     <main>
 
-        
+        <!-- comics -->
         <div id="comics_content" class="container">
             <div id="label" class="text-uppercase">
                 <h5>current series</h5>
@@ -31,10 +38,13 @@
             </div>
 
         </div>
+        <!-- /comics -->
 
+        <!-- buy content -->
         <div id="buy_container" class="mt-5">
             <div class="container">
                 <ul class="d-flex py-5 justify-content-between align-center">
+
                 @foreach($buyLinks as $link)
                     <li>
                         <img src="{{ Vite::asset($link['icon']) }}" alt="icon">
@@ -44,6 +54,7 @@
                 </ul>
             </div>
         </div>
+        <!-- /buy content -->
 
     </main>
 

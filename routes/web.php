@@ -105,5 +105,14 @@ Route::get('/', function () {
         ]
     ];
 
-    return view('home', compact('comics', 'links', 'buyLinks', 'footerLinks'));
+    //icons footer
+    $icons = [
+        'resources/img/footer-facebook.png',
+        'resources/img/footer-twitter.png',
+        'resources/img/footer-youtube.png',
+        'resources/img/footer-pinterest.png',
+        'resources/img/footer-periscope.png',
+    ];
+
+    return view('home', compact('comics', 'links', 'buyLinks', 'footerLinks', 'icons'));
 })->name('home');

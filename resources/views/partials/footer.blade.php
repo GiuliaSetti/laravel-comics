@@ -7,10 +7,12 @@
             @foreach ($footerLinks as $link)
 
                     <ul>
+
                         <h4> {{ $link['linksName'] }} </h4>
+
                         @foreach ($link['links'] as $mainLink)
                             <li>
-                                <a href="">{{ $mainLink }}</a>
+                                <a href="#">{{ $mainLink }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -45,4 +47,25 @@
         </div>
     </div>
 
+</div>
+
+<div id="footer_down">
+    <div class="container d-flex justify-content-between py-2">
+        <div>
+            <button>SIGN UP NOW!</button>
+        </div>
+        <div id="icons">
+            <ul class="d-flex gap-4 align-content-center">
+
+                <h4 class="px-2">FOLLOW US</h4>
+                @foreach ($icons as $icon)
+                <li>
+                    <a href="#">
+                        <img src="{{Vite::asset($icon)}}" alt="social_icon">
+                    </a>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
 </div>
