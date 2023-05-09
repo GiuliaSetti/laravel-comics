@@ -32,7 +32,9 @@ a{
     @include flex();
     justify-content: space-between;
 
-    padding-top: 20px;
+    background-color: white;
+
+    padding: 10px;
 
     #header_left{
         img{
@@ -50,6 +52,7 @@ a{
                 
                 a{
                     color: $lightGray;
+                    padding-top: 20px;
                     padding-bottom: 42px;
                     border-bottom: 3px solid transparent;
 
@@ -76,5 +79,13 @@ a{
 
    
 
+}
+
+//jumbotron
+
+#jumbotron{
+    height: 400px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
 }
 
