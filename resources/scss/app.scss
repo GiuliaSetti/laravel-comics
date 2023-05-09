@@ -1,1 +1,80 @@
+
+//importo i due file scss
+@use '_mixins.scss' as *;
+@use '_variables.scss' as *;
+
 @import '~bootstrap/scss/bootstrap';
+
+//generali
+ul{
+    list-style: none;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+//top header
+#header_top{
+    background-color: $blue;
+    padding: 5px 0;
+
+    text-align: end;
+    a{
+        color: white;
+
+        padding-left: 50px;
+    }
+}
+
+#header_bottom{
+    @include flex();
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    #header_left{
+        img{
+            width: 70px;
+            display: block;
+        }
+    }
+    
+    #header_center{
+        ul{
+            @include flex();
+            
+            gap: 35px;
+            li{
+                
+                a{
+                    color: $lightGray;
+                    padding-bottom: 42px;
+                    border-bottom: 3px solid transparent;
+
+                    &:hover{
+                        border-bottom: 3px solid $blue;
+                        color: $blue;
+                    }
+                }
+
+            }
+            
+            
+        }
+
+    }
+
+    #header_right{
+        input{
+            text-align: end;
+            border: transparent;
+            border-bottom: 2px solid $blue;
+        }
+    }
+
+   
+
+}
+

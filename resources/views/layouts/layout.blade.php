@@ -19,7 +19,7 @@
 
     @include('partials/header')
 
-    @yield('content')
+    <!-- @yield('content') -->
 
     @include('partials/footer')
 

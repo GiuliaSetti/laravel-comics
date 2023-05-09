@@ -17,5 +17,20 @@ Route::get('/', function () {
     
     $comics = config('comics');
 
-    return view('home', compact('comics'));
-});
+
+    //link header
+    $links = [
+        'characters' => 'characters',
+        'comics' => 'comics',
+        'movies' => 'movies',
+        'tv' => 'tv',
+        'games' => 'games',
+        'collectibles' => 'collectibles',
+        'videos' => 'videos',
+        'fans' => 'fans',
+        'news' => 'news',
+        'shop' => 'shop'
+    ];
+
+    return view('home', compact('comics', 'links'));
+})->name('home');
