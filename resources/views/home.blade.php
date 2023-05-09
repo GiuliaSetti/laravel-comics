@@ -32,6 +32,19 @@
 
         </div>
 
+        <div id="buy_container" class="my-5">
+            <div class="container">
+                <ul class="d-flex py-5 justify-content-between align-center">
+                @foreach($buyLinks as $link)
+                    <li>
+                        <img src="{{ Vite::asset($link['icon']) }}" alt="icon">
+                        <a class="text-uppercase" href="#">{{$link['title']}}</a>
+                    </li>
+                @endforeach
+                </ul>
+            </div>
+        </div>
+
     </main>
 
 @endsection
