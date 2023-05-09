@@ -25,6 +25,7 @@
 
     @include('partials/footer')
 
+    @include('partials/footerEnd')
 
 
 </body>

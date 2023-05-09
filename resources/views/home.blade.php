@@ -32,7 +32,7 @@
 
         </div>
 
-        <div id="buy_container" class="my-5">
+        <div id="buy_container" class="mt-5">
             <div class="container">
                 <ul class="d-flex py-5 justify-content-between align-center">
                 @foreach($buyLinks as $link)

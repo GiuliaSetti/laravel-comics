@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-color: $blue;
+}
+
 //top header
 #header_top{
     background-color: $blue;
@@ -29,56 +33,60 @@ a{
 }
 
 #header_bottom{
-    @include flex();
-    justify-content: space-between;
-
     background-color: white;
-
-    padding: 10px;
-
-    #header_left{
-        img{
-            width: 70px;
-            display: block;
-        }
-    }
     
-    #header_center{
-        ul{
-            @include flex();
-            
-            gap: 35px;
-            li{
-                
-                a{
-                    color: $lightGray;
-                    padding-top: 20px;
-                    padding-bottom: 42px;
-                    border-bottom: 3px solid transparent;
-
-                    &:hover{
-                        border-bottom: 3px solid $blue;
-                        color: $blue;
-                    }
-                }
-
+    #header_bottom_content{
+        @include flex();
+        justify-content: space-between;
+    
+    
+    
+        padding: 10px;
+    
+        #header_left{
+            img{
+                width: 70px;
+                display: block;
             }
-            
-            
         }
-
-    }
-
-    #header_right{
-        input{
-            text-align: end;
-            border: transparent;
-            border-bottom: 2px solid $blue;
+        
+        #header_center{
+            ul{
+                @include flex();
+                
+                gap: 35px;
+                li{
+                    
+                    a{
+                        color: $lightGray;
+                        padding-top: 20px;
+                        padding-bottom: 42px;
+                        border-bottom: 3px solid transparent;
+    
+                        &:hover{
+                            border-bottom: 3px solid $blue;
+                            color: $blue;
+                        }
+                    }
+    
+                }
+                
+                
+            }
+    
         }
+    
+        #header_right{
+            input{
+                text-align: end;
+                border: transparent;
+                border-bottom: 2px solid $blue;
+            }
+        }
+    
+       
+    
     }
-
-   
-
 }
 
 //jumbotron
@@ -92,6 +100,7 @@ a{
 
 //main content
 main{
+
     background-color: $darkerGray;
     
     #comics_content{
@@ -141,18 +150,76 @@ main{
     
     }
 
-    //buy container
-    #buy_container{
-        background-color: $blue;
+    
+}
 
-        img{
-            width: 80px;
-            height: 90px;
+//buy container
+#buy_container{
+
+    margin-top: 1rem;
+    background-color: $blue;
+
+    img{
+        width: 80px;
+        height: 90px;
+    }
+
+    a{
+        color: white;
+    }
+}
+//footer
+
+#footer_up{
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+
+    padding: 50px 0;
+
+    height: 420px;
+
+    #footer_content{
+        height: 100%;
+        
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        
+        
+        #footer_links{
+            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            
+            h4{
+                color: white;
+            }
+
+            a{
+                color: $lightGray;
+
+                font-weight: 500;
+            }
         }
 
-        a{
-            color: white;
+        #footer_logo{
+            position: absolute;
+
+            top: -40%;
+            right: 0;
         }
+    }
+
+    #copyrights{
+
+        padding: 0 40px;
+        
+
+        color: $lightGray;
     }
 
 }
