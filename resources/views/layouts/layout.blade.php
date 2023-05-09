@@ -21,7 +21,7 @@
 
     @include('partials/jumbotron')
 
-    <!-- @yield('content') -->
+    @yield('content')
 
     @include('partials/footer')
 

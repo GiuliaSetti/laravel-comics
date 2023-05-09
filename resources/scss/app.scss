@@ -89,3 +89,57 @@ a{
     background-size: cover;
 }
 
+
+//main content
+main{
+    background-color: $darkerGray;
+    
+    #comics_content{
+    
+        
+    
+        #label{
+        
+            position: relative;
+            padding: 20px 0;
+        
+            h5{
+                color: white;
+                background-color: $blue;
+                text-align: center;
+                width: 180px;
+                padding: 8px;
+        
+                position: absolute;
+                top: -20px;
+        
+            }
+        }
+
+        .comic_title{
+            color: white;
+        }
+    
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    
+        #my_button{
+            display: flex;
+            justify-content: center;
+    
+            button{
+                border: none;
+                background-color: $blue;
+                padding: 8px 50px;
+                color: white;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+    
+    }
+
+}
+
